@@ -2,11 +2,11 @@ console.log("Meteo App")
 
 class Meteo {
 
-    constructor(private _ville: string, private _temperature: number) {
+    constructor(private ville: string, private temperature: number) {
     }
 
     toString():string {
-        return `${this._ville} - ${this._temperature}°C`
+        return `${this.ville} - ${this.temperature}°C`
         }
 }
 

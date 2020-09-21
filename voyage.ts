@@ -18,7 +18,7 @@ class SejourService {
       this.listSejours =  [new Sejour('Montpellier', 1000), new Sejour('Paris', 2000)]
     }
 
-       rechercheNom(name: string) {
+       rechercheNom(name: string) :  Sejour | void{
         for (let sejour of this.listSejours) {
             if (sejour.nom === name) {
                 return sejour
